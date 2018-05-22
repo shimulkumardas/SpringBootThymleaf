@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+<link rel="stylesheet" type="tex/css" th:href="@{/css/style.css"/>
+</head>
+<body>
+<h1>Welcome</h1>
+<h2 th:utext="${message}">....!...</h2>
+<!-- In Themleaf the equivalent of JSP's ${pageContex.request.contextPath}/edit.html would be @{/edit.html} -->
+
+<a th:href="@{/personList}"Person List></a>
+
+</body>
+</html>

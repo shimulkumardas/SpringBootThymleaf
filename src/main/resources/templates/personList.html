@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Person List</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1>Person List</h1>
+<a href="addPerson">Add Person</a>
+<br/><br/>
+<div>
+		<table border="1">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+			</tr>
+			<tr th:each="person:${person}">
+				<td th:utext="${person.firstName}">...</td>
+				<td th:utext="${perdon.lastName}">...</td>
+			</tr>
+			
+		</table>
+</div>
+
+</body>
+</html>
